@@ -26,8 +26,7 @@ class Department {
   // 객체 안에 객체(?)
   Map<String, dynamic> toJson(Department instance) => {
         'name': name,
-        'employee name': instance.leader.name,
-        'employee age': instance.leader.age,
+        'employee': instance.leader,
       };
 
   void writeFile(String src, String text) {
